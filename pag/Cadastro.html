@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+	<title>Lugares</title>
+    <script src="../js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery/jquery.mask.min.js"></script>
+    <script src="../js/mask.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/validar.js"></script>
+
+   <link rel="shortcut icon" href="../img/favicon.png" type="image/x-jpg"/>
+	<link href="../Css/Cadastro.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+
+    <a name="ancora"></a>
+
+       <!--====================Aqui declaro o menu====================-->
+
+
+    <div id="menu1">
+    <div id="menu2">
+        <head><h1>OS Lugares</h1></head>
+
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="Galeria.html">GALERIA</a></li>
+        <li><a href="Cadastro.html">CADASTRO</a></li>
+        <li><a href="Sobre Nós.html">SOBRE NÓS</a></li>
+        <li><a href="#">CONTATO</a>
+          <ul>
+              <li><a href="Opiniao.html">&nbsp OPINIÃO</a></li>   
+              <li><a href="#">&nbsp  WILSON </a></li>
+          </ul>
+    </ul>
+        
+      </div>
+    </div></br>
+
+   <!--=======================Aqui termina o menu==========================-->
+
+
+    <!--================== Aqui começa o formuladrio ======================-->
+
+
+    <form>
+
+        <!--==== Cadastro basico ======-->
+
+    <div class="Cadastro"><br>
+    <br><label>NOME  
+    <center>
+    <input type="text" name="nome" id="txt" placeholder="Digite seu nome " required=" ">
+    </label></center><br>
+
+    <br><label>EMAIL
+    <center>  
+    <input type="email" name="email" id="txt" placeholder="Dgite um Email" required=" " required="@">
+    </center></label><br>
+
+    <label>SENHA
+    <center>
+    <input type="password" name="senha" id="txt" maxlength="9" placeholder="Máximo 9 Digitos" required=" ">
+    </center></label><br>
+
+        <!--======= Fim do cadastro basico ==========-->
+
+        <!--========= Tipo data ========--> 
+
+    <label>DATA DE NASCIMENTO
+    <center>
+    <input type="date" name="data de nascimento" class="data">  
+    </center></label><br>
+
+        <!--==== Fim  do tipo data =======-->
+
+        <!--==== Começo do tipo radio =====-->
+
+    <h2><legend>&#171;SEXO&#187;</legend></h2>
+    <br>
+    <h2><label for="Masculino">Masculino<input type="radio" name="sexo" id="Masculino" >
+    </label>
+    <br>
+    <label for="Feminino">Feminino <input type="radio" name="sexo" id="Feminino" >
+    </label>
+    </h2> <br>
+          <!--===== Fim do tipo radio ======-->
+
+          <!--===== Começo do Tipo checkbox ======-->
+
+    <h2>Quais são os seus tipo de Lugares favoritos?</h2><br>
+    <br>
+    <input type="checkbox" name="Praias">Praias 
+    &nbsp<input type="checkbox" name="Campos">Campos 
+    <br><br>
+
+    &nbsp &nbsp &nbsp &nbsp<input type="checkbox" name="Frios">Frios  
+    &nbsp &nbsp<input type="checkbox" name="Montanhosos">Montanhosos
+    <br><br>
+
+    &nbsp&nbsp<input type="checkbox" name="Quentes">Quentes 
+    <input type="checkbox" name="Isolados">Isolados 
+    <br>
+
+   <br><h2><legend>Endereço :</legend></h2><br>
+    <label>Estado </label>
+    <select name="estados-brasil">
+  <option value="">Selecione</option>    
+  <option value="AC">Acre</option>
+  <option value="AL">Alagoas</option>
+  <option value="AP">Amapá</option>
+  <option value="AM">Amazonas</option>
+  <option value="BA">Bahia</option>
+  <option value="CE">Ceará</option>
+  <option value="DF">Distrito Federal</option>
+  <option value="ES">Espírito Santo</option>
+  <option value="GO">Goiás</option>
+  <option value="MA">Maranhão</option>
+  <option value="MT">Mato Grosso</option>
+  <option value="MS">Mato Grosso do Sul</option>
+  <option value="MG">Minas Gerais</option>
+  <option value="PA">Pará</option>
+  <option value="PB">Paraíba</option>
+  <option value="PR">Paraná</option>
+  <option value="PE">Pernambuco</option>
+  <option value="PI">Piauí</option>
+  <option value="RJ">Rio de Janeiro</option>
+  <option value="RN">Rio Grande do Norte</option>
+  <option value="RS">Rio Grande do Sul</option>
+  <option value="RO">Rondônia</option>
+  <option value="RR">Roraima</option>
+  <option value="SC">Santa Catarina</option>
+  <option value="SP">São Paulo</option>
+  <option value="SE">Sergipe</option>
+  <option value="TO">Tocantins</option>
+    </select><br> 
+
+    <br>    <label>Cidade </label>
+    <select name="cidades-brasil">
+    <option value="">Selecione</option>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espirito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+    </select><br> 
+
+      <!--===== Fim do checkbox ======-->
+
+      <!--===== Começo do submit =======-->
+
+    <br><input type="submit" value="ENVIAR" class="botao" onclick="alert('Agora você está logado :)')"> &nbsp <input type="reset" value="LIMPAR" class="botao">
+
+      <!--===== Fim do submit ==========-->
+
+      </div>
+r
+
+    </form>
+
+      <!--=================== Fim do Formulario ===================-->
+
+   
+      <br>
+
+      <!--=========== Aqui começa a ancora ============-->
+      
+      <center><a href="#ancora" class="Ancora"><img src="../img/ancora.jpg"></a></center>
+      <br>
+
+      <!--============= Aqui termina a ancora ========-->
+
+      <!--============= Aqui declaro o rodapé ========-->
+
+    <div class="rodape">
+       <p>Autoria do site : Wilson Castro(Corcunda de Notre Dame) 
+       <p>Todos os direitos reservado 30/06/2018</p>
+    </div>
+
+      <!--========================Aqui termina o rodapé========================-->
+
+
+  </body>
+</html>
